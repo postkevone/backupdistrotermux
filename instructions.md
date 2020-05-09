@@ -21,13 +21,13 @@ termux-setup-storage
 pkg update && pkg upgrade
 ```
 
-then restore the home folder
+restore the home folder
 ```
 cd /data/data/com.termux/files
 rm -rf home
 tar --same-owner -pzxf /sdcard/termux-backup.tar.gz home
 ```
-finally restore the usr folder
+restore the usr folder
 ```
 cd /data/data/com.termux/files
 cp ./usr/bin/busybox ./tar
