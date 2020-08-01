@@ -4,17 +4,16 @@ This is a guide on how to backup and restore any Termux distro without losing fo
 
 [![youtube tutorial](https://img.youtube.com/vi/3rHYsxcEr7k/0.jpg)](https://www.youtube.com/watch?v=3rHYsxcEr7k)
 ***
-**Backup**
-
+**Backup**<br/>
 ・Make sure your distro root folders (es. /dev, /proc) can be read by the owner<br/>
-・If not, change the permissions of the folders to (400)
+・If not, change the permissions of the folders to (400)<br/>
 ・Use the following command to backup your Termux "home" and "usr" folder
 ```
 cd /data/data/com.termux/files
 tar --format=gnu -pzcf /sdcard/termux-backup.tar.gz home usr
 ```
 ***
-**Restore**
+**Restore**<br/>
 ・Make sure to have storage permissions and the latest version of you Termux packages (supposing you have just installed Termux)
 ```
 termux-setup-storage
