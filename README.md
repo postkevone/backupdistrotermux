@@ -16,7 +16,7 @@ tar --format=gnu -pzcf /sdcard/termux-backup.tar.gz home usr
 ```
 ***
 **Restore**<br/>
-* Make sure to have storage permissions and the latest version of you Termux packages (supposing you have just installed Termux)
+* Make sure to have storage permissions and the latest version of your Termux packages (supposing you have just installed Termux)
 ```
 termux-setup-storage
 pkg update && pkg upgrade
